@@ -1,0 +1,79 @@
+* {
+    font-size: 30px;
+}
+
+body {
+    background-color: rgb(241, 224, 224);
+    text-align: center;
+}
+
+/* main container */
+.container {
+    margin: auto;
+    max-width: 500px;
+    background-image: linear-gradient(rgb(18, 7, 58), rgb(55, 38, 212));
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+/* separate containers */
+.rules {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    color: rgb(219, 198, 198);
+}
+.container-child {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+/* input, buttons, alert message */
+#input {
+    border-radius: 4px;
+    text-align: center;
+}
+
+.newBtn {
+    background-color: red;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+.newBtn:hover {
+    transition: ease-in-out 0.15s;
+    background-color: rgb(133, 27, 27);
+}
+
+.submitBtn {
+    background-color: rgb(28, 173, 28);
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+}
+.submitBtn:hover {
+    transition: ease-in-out 0.15s;
+    background-color: rgb(19, 97, 19);
+}
+
+.remaining {
+    color: white;
+}
+.alertmsg {
+    max-width: 500px;
+    margin-left: auto;
+    border-radius: 4px;
+    font-size: 25px;
+    margin: auto;
+}
+
+/* media query for the grid items and fix input default value on reset */
+@media only screen and (max-width: 525px) {
+    .container-child {
+        background-color: red;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));        
+    }
+}
